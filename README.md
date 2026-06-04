@@ -1,11 +1,11 @@
 # Calculadora Básica en Python
 
 ## Integrantes
-- Estudiante A: [Nombre]
-- Estudiante B: [Nombre]
+- Estudiante A: Francisco Ramirez.
+- Estudiante B: Domenica Espinosa.
 
 ## Carrera y Paralelo
-[Tu carrera] - Paralelo [Número]
+Desarrollo De Software - Paralelo Quinto "A"
 
 ## Descripción
 Calculadora básica con operaciones de suma, resta, multiplicación y división.
