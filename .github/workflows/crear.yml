@@ -1,0 +1,49 @@
+name: Python application start
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  
+permissions:
+  contents: read
+  packages: write 
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12"
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Ejecutar la app
+      run: |
+        python app.py
+        
+    - name: Test with pytest
+      run: pytest
+        
+    - name: simulacion del deploy
+      run: |
+        echo "simular que se esta desplegando la aplicacion en un servidor"
+
+    - name: construir la imagen de docker
+      run: |
+        docker build -t ghcr.io/19ramirez/hello-francisco:1.0.0 .
+
+    - name: Login en GitHub Container Registry
+      run: |
+        echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+    - name: publicar la imagen
+      run: |
+        docker push ghcr.io/19ramirez/hello-francisco:1.0.0
