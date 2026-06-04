@@ -1,14 +1,19 @@
-# Calculadora Básica en Python
+# Calculadora Colaborativa
+
+## Estado del Proyecto
+![workflow](https://github.com/19ramirez/calculadora-colaborativa/actions/workflows/crear.yml/badge.svg)
 
 ## Integrantes
-- Estudiante A: Francisco Ramirez.
-- Estudiante B: Domenica Espinosa.
+- **Estudiante A:** FRANCISCO ESTEBAN RAMIREZ AZA  - Creador del repositorio
+- **Estudiante B:** DOMENICA DAYANA ESPINOSA IMBAQUINGO - Desarrollador colaborador
 
-## Carrera y Paralelo
-Desarrollo De Software -  Quinto "A"
-
-## Descripción
-Calculadora básica con operaciones de suma, resta, multiplicación y división.
+## Funcionalidades
+- ✅ Suma
+- ✅ Resta
+- ✅ Multiplicación
+- ✅ División con validación
+- ✅ Potencia (Contribución Estudiante B)
+- ✅ Interfaz mejorada (Contribución Estudiante A)
 
 ## Cómo ejecutar
 ```bash
