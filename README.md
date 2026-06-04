@@ -5,7 +5,7 @@
 - Estudiante B: Domenica Espinosa.
 
 ## Carrera y Paralelo
-Desarrollo De Software - Paralelo Quinto "A"
+Desarrollo De Software -  Quinto "A"
 
 ## Descripción
 Calculadora básica con operaciones de suma, resta, multiplicación y división.
