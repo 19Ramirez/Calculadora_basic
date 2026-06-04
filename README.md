@@ -1,8 +1,5 @@
 # Calculadora Colaborativa
 
-## Estado del Proyecto
-![workflow]([https://github.com/19ramirez/calculadora-colaborativa/actions/workflows/crear.yml/badge.svg](https://github.com/19Ramirez/Calculadora_basic/actions))
-
 ## Integrantes
 - **Estudiante A:** FRANCISCO ESTEBAN RAMIREZ AZA  - Creador del repositorio
 - **Estudiante B:** DOMENICA DAYANA ESPINOSA IMBAQUINGO - Desarrollador colaborador
