@@ -1,4 +1,4 @@
-from app import suma, resta, multiplicacion, division
+from app import suma, resta, multiplicacion, division, potencia
 
 def test_suma():
     assert suma(5, 3) == 8
@@ -23,3 +23,8 @@ def test_division():
 def test_hola():
     mensaje = "Buscar en esta cadena la palabra HOLA"
     assert "HOLA" in mensaje
+
+def test_potencia():
+    assert potencia(2, 3) == 8
+    assert potencia(5, 0) == 1
+    assert potencia(3, 2) == 9
