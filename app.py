@@ -1,3 +1,14 @@
+def mostrar_menu():
+    print("=" * 40)
+    print("     CALCULADORA AVANZADA v2.0")
+    print("=" * 40)
+    print("1. ➕ Suma")
+    print("2. ➖ Resta")
+    print("3. ✖️ Multiplicación")
+    print("4. ➗ División")
+    print("5. 🚪 Salir")
+    print("=" * 40)
+
 def suma(a, b):
     return a + b
 
@@ -7,12 +18,13 @@ def resta(a, b):
 def multiplicacion(a, b):
     return a * b
 
+
 def division(a, b):
     if b != 0:
         return a / b
     else:
         return "Error: División entre cero"
-
+    
 def calculadora():
     print("\n=== CALCULADORA BÁSICA ===")
     print("1. Suma")
