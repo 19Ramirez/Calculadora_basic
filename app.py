@@ -13,23 +13,28 @@ def division(a, b):
     else:
         return "Error: División entre cero"
 
+def potencia(a, b):
+    """Calcula a elevado a la b"""
+    return a ** b
+
 def calculadora():
     print("\n=== CALCULADORA BÁSICA ===")
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicación")
     print("4. División")
-    print("5. Salir")
+    print("5. Potencia")
+    print("6. Salir")
     
     while True:
         try:
-            opcion = input("\nSeleccione una opción (1-5): ")
+            opcion = input("\nSeleccione una opción (1-6): ")
             
-            if opcion == '5':
+            if opcion == '6':
                 print("¡Hasta luego!")
                 break
             
-            if opcion in ['1', '2', '3', '4']:
+            if opcion in ['1', '2', '3', '4', '5']:
                 num1 = float(input("Ingrese el primer número: "))
                 num2 = float(input("Ingrese el segundo número: "))
                 
@@ -41,6 +46,8 @@ def calculadora():
                     print(f"Resultado: {num1} * {num2} = {multiplicacion(num1, num2)}")
                 elif opcion == '4':
                     print(f"Resultado: {num1} / {num2} = {division(num1, num2)}")
+                elif opcion == '5':
+                    print(f"Resultado: {num1} ^ {num2} = {potencia(num1, num2)}")
             else:
                 print("Opción no válida")
         except ValueError:
