@@ -18,7 +18,7 @@ def potencia(a, b):
 
 def calculadora_interactiva():
     """Versión interactiva para uso normal"""
-    print("\n=== CALCULADORA BÁSICA ===")
+    print("=== MI SUPER CALCULADORA POTENTE v2.0 ===")
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicación")
